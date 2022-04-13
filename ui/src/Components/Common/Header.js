@@ -4,10 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle'
-import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import cloud_logo from '../../Resources/Images/cloud_icon.png'
 
 
 const sections = [
@@ -22,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbarTitle: {
     flex: 1,
-    color: '#A200FF',
+    color: '#ca142a',
     fontWeight : 600
   },
   toolbarSecondary: {
@@ -34,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     flexShrink: 0,
     "&:hover": {
-      color: "#A200FF",
+      color: "#ca142a",
     }
   },
   logo: {
@@ -53,7 +51,7 @@ export default function Header(props) {
        
         <img className={classes.logo}
           alt="logo"
-          src={cloud_logo} />
+          src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png" />
         <Typography
           component="h2"
           variant="h5"
@@ -64,9 +62,6 @@ export default function Header(props) {
         >
           {title}
         </Typography>
-        {/* <IconButton>
-          <SearchIcon />
-        </IconButton> */}
         <IconButton>
           <AccountCircleIcon />
         </IconButton>

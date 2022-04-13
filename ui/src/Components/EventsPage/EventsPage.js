@@ -28,8 +28,8 @@ export default function EventsPage() {
 const mainFeaturedPost = {
   title: 'Events Page',
   description:
-    "One stop platform to search and attend personalised internal & ecternal events",
+    "One stop platform to search and attend personalised internal & external events",
   image: 'https://thumbs.gfycat.com/AntiqueEdibleBarnswallow-size_restricted.gif',
-  imgText: 'Market Place',
+  imgText: 'Events',
   linkText: 'Continue reading…',
 };

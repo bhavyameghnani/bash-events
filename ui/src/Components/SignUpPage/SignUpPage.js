@@ -17,12 +17,10 @@ const useStyles = makeStyles((theme) => ({
     //height: '100vh',
   },
   image: {
-    //backgroundImage: 'url(https://1471793142.rsc.cdn77.org/data/images/full/49011/office-friends.jpeg)',
     backgroundImage: 'url(https://i.pinimg.com/originals/69/20/fc/6920fc266ea0a8bfbb02561dfdd18f1c.png)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-    //backgroundSize: 'cover',
     backgroundPosition: 'center',
     marginTop: -10
   },

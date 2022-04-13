@@ -92,7 +92,7 @@ export default function EventsPageTiles() {
       <CssBaseline />
           <main>
               <Typography variant="h5" className={classes.divHeading}>
-                <b>Save Mother Earth</b>
+                <b>Internal & External Events</b>
               </Typography>
               <br />
               <Grid container spacing={4}>
@@ -141,15 +141,8 @@ export default function EventsPageTiles() {
                   </Grid>
                 ))}
               </Grid>
-              <br />
-           
-              <br />
-              <Typography variant="h5" className={classes.divHeading}>
-                <b>Digitally Enabling Farmers</b>
-              </Typography>
-              <Typography variant="body1" className={classes.desc}>
-              Digital Market Place for Farmers
-            </Typography>
+
+      
 
               <Dialog
                 open={open}
@@ -184,44 +177,32 @@ export default function EventsPageTiles() {
   );
 }
 
-  const featuredPosts = [
-    {
-      title: 'Aliette® Fungicide',
-      description:
-      'True, Two-way Systemic Protection against Disease. With multiple modes of action, Aliette attacks pathogens at various growth stages for better overall disease control. ',
-      image: 'https://m.media-amazon.com/images/I/61SPA2qogiL._SL1247_.jpg',
-      },
-    {
-      title: 'Luna Unprecedented Disease Control',
-      description:
-      'Effective on a wide range of crops, Luna fungicide provides unprecedented control of some of the most problematic fungal diseases to help growers deliver the best possible fruits, nuts and vegetables.',
-      image: 'https://m.media-amazon.com/images/I/517RZq88bYL._SL1224_.jpg',
-      },
-    {
-      title: 'Balance® Flexx Herbicide',
-      description:
-      'Balance® Flexx pre-emergence corn herbicide provides a flexible foundation that complements any herbicide program to protect yields from the start.',
-      image: 'https://cdn.shopify.com/s/files/1/1627/6009/products/balance-flexx-herbicide-2.5gals_2987f0e7-9be7-4c6b-b91b-fdd92d4a5f81.jpg?v=1551995194',
-      },
-  
-    {
-      title: 'Movento® Insecticide',
-      description:
-      'Movento® insecticide features powerful, two-way movement that moves within plants to protect them from a broad range of insects, mites and nematodes above and below the ground, creating highly pest-resistant plants and healthier crops.',
-      image: 'https://static.agrostar.in/static/AGS-CP-772_1.jpg',
-      },
-    {
-      title: 'Velum® One Insecticide',
-      description:
-      'The new nematicide with fungicidal activity for use on tree nuts, fruiting vegetables, strawberries, brassicas and cucurbits. Velum One manages a wide spectrum of yield-robbing nematodes and brings wide-spectrum, long-lasting nematode control to California and Arizona growers.',
-      image: 'https://5.imimg.com/data5/SELLER/Default/2021/3/RM/UA/CU/5111461/velum-prime-insecticide-500x500.jpg',
-      },
-      {
-        title: 'Leverage® 360 Insecticide',
-        description:
-        'It has two modes of action against sucking and chewing pests — one delivers fast knockdown, the other extends residual control. Leverage 360 with Stress Shield™ protection helps plants stay vigorous for greater yields. Leverage 360 is a restricted use pesticide.',
-        image: 'https://www.ubuy.mv/productimg/?image=aHR0cHM6Ly9pLmViYXlpbWcuY29tL2ltYWdlcy9nLy1WUUFBT1N3ZH5GZXZJUE8vcy1sNTAwLmpwZw.jpg',
-        },
-  
-  
-  ];
+const featuredPosts = [
+  {
+    title: 'Indian Canvas Painting',
+    description:
+    'Quick 1min podcast to know more about Indian Canvas Painting',
+    image: 'https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg',
+    imageText: 'Artists name',
+    readmore: "While sitting down, stretch your arms out at your sides and press your shoulder blades together. With your palms facing down, circle your arms forwards around 20 times. Then, face your palms upwards and circle your arms backwards around 20 times. After this, circle your wrists 20 times in each direction."
+  },
+  {
+    title: 'Worli Paintaing',
+    description:
+    'How to get started with Worli Paintings',
+    image: 'https://5.imimg.com/data5/PI/TE/MY-13589378/2016-07-05-16-53-05-500x500.jpg',
+    imageText: 'Artists name',
+    readmore: "Stand up and hold your hands together behind your back, expanding your chest. Pull your shoulder blades as close together as possible and hold the pose for 30 seconds."
+  },
+  {
+    title: 'American Brush Strokes',
+    description:
+    'All you need to know about American Brush Strokes',
+    image: 'https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg',
+    imageText: 'Artists name',
+    readmore: "Under your desk, raise both legs at once upwards, and slowly lower them down. Repeat few times."
+  },
+
+
+
+];
