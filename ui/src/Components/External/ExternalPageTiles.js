@@ -70,8 +70,9 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function EventsPageTiles() {
+export default function ExternalPageTile() {
   const classes = useStyles();
+
   const [open, setOpen] = React.useState(false);
 
   //Only on first render
@@ -90,7 +91,7 @@ export default function EventsPageTiles() {
       <CssBaseline />
       <main>
         <Typography variant="h5" className={classes.divHeading}>
-          <b>Internal Events</b>
+          <b>External Events</b>
         </Typography>
         <br />
         <Grid container spacing={4}>
@@ -170,7 +171,12 @@ export default function EventsPageTiles() {
               {/* {localStorage.getItem("f_readmore")}
                     <br /> <br /> */}
               <center>
-                <img alt="fitness tip" src={localStorage.getItem("f_image")} />
+                <img
+                  alt="fitness tip"
+                  height="300px"
+                  width="400px"
+                  src={localStorage.getItem("f_image")}
+                />
               </center>
             </DialogContentText>
           </DialogContent>
@@ -184,6 +190,7 @@ export default function EventsPageTiles() {
         <br />
         <br />
         <br />
+
         <BottomNavigationPage />
       </main>
     </React.Fragment>
@@ -192,30 +199,40 @@ export default function EventsPageTiles() {
 
 const featuredPosts = [
   {
-    title: "Indian Canvas Painting",
-    description: "Quick 1min podcast to know more about Indian Canvas Painting",
+    title: "Leadership Program",
+    description: "Status: Applied",
     image:
-      "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
+      "https://focusu.com/wp-content/uploads/2020/09/1CB3A4E6-0B1C-440B-91EB-8FA4DC82925F.png",
     imageText: "Artists name",
     readmore:
       "While sitting down, stretch your arms out at your sides and press your shoulder blades together. With your palms facing down, circle your arms forwards around 20 times. Then, face your palms upwards and circle your arms backwards around 20 times. After this, circle your wrists 20 times in each direction.",
   },
   {
-    title: "Worli Paintaing",
-    description: "How to get started with Worli Paintings",
+    title: "Health & Mental Wellness Program",
+    description: "Status: Pending",
     image:
-      "https://5.imimg.com/data5/PI/TE/MY-13589378/2016-07-05-16-53-05-500x500.jpg",
+      "https://globalwellnessinstitute.org/wp-content/uploads/2019/05/wellnessinfographic.png",
     imageText: "Artists name",
     readmore:
       "Stand up and hold your hands together behind your back, expanding your chest. Pull your shoulder blades as close together as possible and hold the pose for 30 seconds.",
   },
   {
-    title: "American Brush Strokes",
-    description: "All you need to know about American Brush Strokes",
+    title: "Technology - Networking Program",
+    description: "Status: Applied",
     image:
-      "https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg",
+      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/stockvault-person-studying-and-learning---knowledge-concept178241_0-647x363.jpeg?0LocAW2E2gIBzZp0oZSWzxmQTvAPhN_v",
     imageText: "Artists name",
     readmore:
       "Under your desk, raise both legs at once upwards, and slowly lower them down. Repeat few times.",
+  },
+
+  {
+    title: "CSR",
+    description: "Status: Verified & Validated",
+    image:
+      "https://www.corporateprofessionals.com/wp-content/uploads/2020/02/csr-2.jpg",
+    imageText: "Artists name",
+    readmore:
+      "Holding a water bottle, or an object of a similar weight, let your arms fall straight by your side and then slowly bend them upwards. Repeat this action multiple times on both arms.",
   },
 ];

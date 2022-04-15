@@ -4,18 +4,18 @@ import Container from "@material-ui/core/Container";
 import Header from "../Common/Header";
 import MainFeaturedPost from "../Common/MainFeaturedPost";
 import Grid from "@material-ui/core/Grid";
-import EventsPageTiles from "./EventsPageTiles";
+import ExternalPageTile from "./ExternalPageTiles";
 
-export default function EventsPage() {
+export default function ExternalPage() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Events Page" />
+        <Header title="BASH" />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={2} align="center">
-            <EventsPageTiles />
+            <ExternalPageTile />
           </Grid>
         </main>
       </Container>
@@ -25,7 +25,7 @@ export default function EventsPage() {
 }
 
 const mainFeaturedPost = {
-  title: "Internal Events Page",
+  title: "External Events Page",
   description:
     "One stop platform to search and attend personalised internal & external events",
   image:
