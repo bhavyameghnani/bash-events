@@ -15,6 +15,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import BottomNavigationPage from "../Common/BottomNavigationPage";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -96,13 +97,18 @@ export default function EventsPageTiles() {
         <Grid container spacing={4}>
           {featuredPosts.map((card) => (
             <Grid item key={card.title} xs={12} sm={6} md={4}>
+               
               <Card className={classes.card}>
+              <Link to={"/internalPage/"+card.eid} style={{ textDecoration: 'none' }}> 
                 <CardMedia
                   className={classes.cardMedia}
                   image={card.image}
                   title={card.title}
+                  // onClick={() => {window.open('/internalPage/'+card.eid)}}
                 />
+                </Link>
                 <CardContent className={classes.cardContent}>
+                <Link to={"/internalPage/"+card.eid} style={{ textDecoration: 'none' }}> 
                   <Typography
                     gutterBottom
                     variant="h6"
@@ -118,7 +124,7 @@ export default function EventsPageTiles() {
                   >
                     {card.description}
                   </Typography>
-
+                  </Link>
                   <CardActions>
                     <Button
                       variant="outlined"
@@ -149,6 +155,7 @@ export default function EventsPageTiles() {
                   </CardActions>
                 </CardContent>
               </Card>
+             
             </Grid>
           ))}
         </Grid>
@@ -193,6 +200,7 @@ export default function EventsPageTiles() {
 const featuredPosts = [
   {
     title: "Indian Canvas Painting",
+    eid:"0",
     description: "Quick 1min podcast to know more about Indian Canvas Painting",
     image:
       "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
@@ -202,6 +210,7 @@ const featuredPosts = [
   },
   {
     title: "Worli Paintaing",
+    eid:"1",
     description: "How to get started with Worli Paintings",
     image:
       "https://5.imimg.com/data5/PI/TE/MY-13589378/2016-07-05-16-53-05-500x500.jpg",
@@ -211,6 +220,7 @@ const featuredPosts = [
   },
   {
     title: "American Brush Strokes",
+    eid:"2",
     description: "All you need to know about American Brush Strokes",
     image:
       "https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg",

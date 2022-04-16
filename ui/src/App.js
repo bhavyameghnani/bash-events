@@ -1,10 +1,11 @@
 import "./App.css";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter} from "react-router-dom";
 import SignUpPage from "./Components/SignUpPage/SignUpPage";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import EventsPage from "./Components/EventsPage/EventsPage";
 import HomePage from "./Components/HomePage/HomePage";
 import ExternalPage from "./Components/External/ExternalPage";
+import EventsDetailsPage from "./Components/EventsPage/EventsDetailsPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route path="/internal" element={<EventsPage />} />
+          <Route path="internalPage/:eid" element={<EventsDetailsPage/>} />
           <Route path="/external" element={<ExternalPage />} />
           <Route path="/" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />

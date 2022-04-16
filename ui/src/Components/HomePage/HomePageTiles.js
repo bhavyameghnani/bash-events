@@ -155,14 +155,14 @@ export default function HomePageTile() {
               alt="icon"
             />
           </Grid>
-          <Grid item>
+          {/* <Grid item>
             <img
               src="  https://cdn.iconscout.com/icon/premium/png-256-thumb/human-resource-management-1528152-1297600.png"
               height="130px"
               width="130px"
               alt="icon"
             />
-          </Grid>
+          </Grid> */}
         </Grid>
 
         <br />
