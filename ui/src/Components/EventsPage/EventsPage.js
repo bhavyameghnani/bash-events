@@ -11,7 +11,7 @@ export default function EventsPage() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Events Page" />
+        <Header title="Internal Events" />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={2} align="center">

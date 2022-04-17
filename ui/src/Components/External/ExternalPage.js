@@ -11,7 +11,7 @@ export default function ExternalPage() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="BASH" />
+        <Header title="External Events" />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={2} align="center">

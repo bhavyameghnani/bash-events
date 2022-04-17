@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     width: 600,
   },
   divHeading: {
-    color: "#e57373",
+    color: "#ca142a",
   },
   subHeading: {
     color: "#115293",
@@ -219,9 +219,9 @@ const featuredPosts = [
       "Stand up and hold your hands together behind your back, expanding your chest. Pull your shoulder blades as close together as possible and hold the pose for 30 seconds.",
   },
   {
-    title: "American Brush Strokes",
+    title: "Brush Strokes",
     eid:"2",
-    description: "All you need to know about American Brush Strokes",
+    description: "All you need to know about Brush Strokes",
     image:
       "https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg",
     imageText: "Artists name",
