@@ -9,7 +9,7 @@ import Paper from '@material-ui/core/Paper';
 // import CardMedia from "@material-ui/core/CardMedia";
 import Container from '@material-ui/core/Container';
 import Typography from "@material-ui/core/Typography";
-// import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 // import Dialog from "@material-ui/core/Dialog";
 // import DialogActions from "@material-ui/core/DialogActions";
 // import DialogContent from "@material-ui/core/DialogContent";
@@ -17,8 +17,10 @@ import Typography from "@material-ui/core/Typography";
 // import DialogTitle from "@material-ui/core/DialogTitle";
 // import Slide from "@material-ui/core/Slide";
 import BottomNavigationPage from "../Common/BottomNavigationPage";
+import GenericCard from "../Common/GenericCard";
 import StepsInternal from "./StepsInternal";
 import StepsExternal from "./StepsExternal";
+import { Link } from "react-router-dom";
 
 export default function HomePageTile() {
   const classes = useStyles();
@@ -66,60 +68,39 @@ export default function HomePageTile() {
           //  style={{ minHeight: '100vh' }}
         >
           <Grid item>
-            <img
-              src="https://kmdastur.com/wp-content/uploads/csr-KMD.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
+            <Link to={"/events/csr"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="CSR Icon" image="https://kmdastur.com/wp-content/uploads/csr-KMD.png" desc="CSR"/>
+            </Link>
           </Grid>
           <Grid item>
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/health-and-wellness-4425334-3668992.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
+            <Link to={"/events/health&wellness"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Health&Wellness Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/health-and-wellness-4425334-3668992.png" desc="Health & Wellness"/>
+            </Link>
           </Grid>
           <Grid item>
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/innovative-technology-738852.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
+            <Link to={"/events/innovation&technology"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Innovation&Technology Icon" 
+                image="https://cdn.iconscout.com/icon/premium/png-256-thumb/innovative-technology-738852.png" desc="Innovation & Technology"/>
+            </Link>
           </Grid>
           <Grid item>
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/culture-3728068-3108373.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
+            <Link to={"/events/culture"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Culture Icon" 
+                image="https://cdn.iconscout.com/icon/premium/png-256-thumb/culture-3728068-3108373.png" desc="Life & Culture"/>
+            </Link>
           </Grid>
           <Grid item>
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/painting-3333455-2773690.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
+            <Link to={"/events/art"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Art Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/painting-3333455-2773690.png" desc="ART"/>
+            </Link>
           </Grid>
+          {/* <Grid item>
+            <GenericCard alt="Finance Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/digital-finance-1133706.png" desc="FINANCE"/>
+          </Grid> */}
           <Grid item>
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/digital-finance-1133706.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
-          </Grid>
-          <Grid item>
-            <img
-              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/strategy-plan-target-achieve-board-sketch-business-model-60322.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
+            <Link to={"/events/strategy"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Strategy Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/strategy-plan-target-achieve-board-sketch-business-model-60322.png" desc="Strategy"/>
+            </Link>
           </Grid>
           {/* <Grid item>
             <img
