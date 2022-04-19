@@ -26,7 +26,7 @@ export default function HomePage() {
 
 const mainFeaturedPost = {
   title: "BASH BOT",
-  description: "Blisfull Ally for Smart Human",
+  description: "Blissful Ally for Smart Human",
   image:
     "https://media-exp1.licdn.com/dms/image/C5112AQFu44n2CJMn2Q/article-inline_image-shrink_1000_1488/0/1583401074610?e=1653523200&v=beta&t=k-toDf-zunQ11eFelVAwAdIUamukcF3pT1J5AOgonOY",
   imgText: "HomePage",
