@@ -19,7 +19,7 @@ function GenericCard(newCard){
                 />
                 <CardActions>
                     <Button size="small" color="primary" variant="contained" 
-                    sx={{alignItems:"center", justifyContent:"center"}}>{newCard.desc}</Button>
+                    align="center">{newCard.desc}</Button>
                 </CardActions>
             </Card>
         </div>

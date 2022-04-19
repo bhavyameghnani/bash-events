@@ -12,6 +12,7 @@ const sections = [
   { title: "Internal Events", url: "/internal" },
   { title: "External Events", url: "/external" },
   { title: "Analytics", url: "/home" },
+  { title: "Collaborate", url: "/collaborate"}
 ];
 
 const useStyles = makeStyles((theme) => ({
