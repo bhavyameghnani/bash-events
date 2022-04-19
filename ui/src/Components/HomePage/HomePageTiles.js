@@ -20,6 +20,7 @@ import BottomNavigationPage from "../Common/BottomNavigationPage";
 import GenericCard from "../Common/GenericCard";
 import StepsInternal from "./StepsInternal";
 import StepsExternal from "./StepsExternal";
+import { Link } from "react-router-dom";
 
 export default function HomePageTile() {
   const classes = useStyles();
@@ -67,27 +68,39 @@ export default function HomePageTile() {
           //  style={{ minHeight: '100vh' }}
         >
           <Grid item>
-            <GenericCard alt="CSR Icon" image="https://kmdastur.com/wp-content/uploads/csr-KMD.png" desc="CSR"/>
+            <Link to={"/events/csr"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="CSR Icon" image="https://kmdastur.com/wp-content/uploads/csr-KMD.png" desc="CSR"/>
+            </Link>
           </Grid>
           <Grid item>
-            <GenericCard alt="Health&Wellness Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/health-and-wellness-4425334-3668992.png" desc="Health & Wellness"/>
+            <Link to={"/events/health&wellness"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Health&Wellness Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/health-and-wellness-4425334-3668992.png" desc="Health & Wellness"/>
+            </Link>
           </Grid>
           <Grid item>
-            <GenericCard alt="Innovation&Technology Icon" 
-              image="https://cdn.iconscout.com/icon/premium/png-256-thumb/innovative-technology-738852.png" desc="Innovation & Technology"/>
+            <Link to={"/events/innovation&technology"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Innovation&Technology Icon" 
+                image="https://cdn.iconscout.com/icon/premium/png-256-thumb/innovative-technology-738852.png" desc="Innovation & Technology"/>
+            </Link>
           </Grid>
           <Grid item>
-            <GenericCard alt="Culture Icon" 
-              image="https://cdn.iconscout.com/icon/premium/png-256-thumb/culture-3728068-3108373.png" desc="Life & Culture"/>
+            <Link to={"/events/culture"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Culture Icon" 
+                image="https://cdn.iconscout.com/icon/premium/png-256-thumb/culture-3728068-3108373.png" desc="Life & Culture"/>
+            </Link>
           </Grid>
           <Grid item>
-            <GenericCard alt="Art Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/painting-3333455-2773690.png" desc="ART"/>
+            <Link to={"/events/art"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Art Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/painting-3333455-2773690.png" desc="ART"/>
+            </Link>
           </Grid>
           {/* <Grid item>
             <GenericCard alt="Finance Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/digital-finance-1133706.png" desc="FINANCE"/>
           </Grid> */}
           <Grid item>
-            <GenericCard alt="Strategy Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/strategy-plan-target-achieve-board-sketch-business-model-60322.png" desc="Strategy"/>
+            <Link to={"/events/strategy"} style={{ textDecoration: 'none' }}> 
+              <GenericCard alt="Strategy Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/strategy-plan-target-achieve-board-sketch-business-model-60322.png" desc="Strategy"/>
+            </Link>
           </Grid>
           {/* <Grid item>
             <img
