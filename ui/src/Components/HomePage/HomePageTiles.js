@@ -68,17 +68,17 @@ export default function HomePageTile() {
           //  style={{ minHeight: '100vh' }}
         >
           <Grid item>
-            <Link to={"/events/csr"} style={{ textDecoration: 'none' }}> 
+            <Link to={"/events/1"} style={{ textDecoration: 'none' }}> 
               <GenericCard alt="CSR Icon" image="https://kmdastur.com/wp-content/uploads/csr-KMD.png" desc="CSR"/>
             </Link>
           </Grid>
           <Grid item>
-            <Link to={"/events/health&wellness"} style={{ textDecoration: 'none' }}> 
+            <Link to={"/events/2"} style={{ textDecoration: 'none' }}> 
               <GenericCard alt="Health&Wellness Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/health-and-wellness-4425334-3668992.png" desc="Health & Wellness"/>
             </Link>
           </Grid>
           <Grid item>
-            <Link to={"/events/innovation&technology"} style={{ textDecoration: 'none' }}> 
+            <Link to={"/events/3"} style={{ textDecoration: 'none' }}> 
               <GenericCard alt="Innovation&Technology Icon" 
                 image="https://cdn.iconscout.com/icon/premium/png-256-thumb/innovative-technology-738852.png" desc="Innovation & Technology"/>
             </Link>

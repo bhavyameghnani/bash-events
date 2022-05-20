@@ -17,7 +17,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/internal" element={<EventsPage />} />
           <Route path="internalPage/:eid" element={<EventsDetailsPage />} />
-          <Route path="events/" element={<EventCategoryPage />} />
+          <Route path="events/:cid" element={<EventCategoryPage />} />
           <Route path="/external" element={<ExternalPage />} />
           <Route path="/" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
