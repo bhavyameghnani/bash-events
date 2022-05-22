@@ -6,12 +6,13 @@ import MainFeaturedPost from "../Common/MainFeaturedPost";
 import Grid from "@material-ui/core/Grid";
 import EventsPageTiles from "./EventsPageTiles";
 
+
 export default function EventsPage() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Internal Events" />
+        <Header title="Internal Engagement" />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={2} align="center">
@@ -25,9 +26,9 @@ export default function EventsPage() {
 }
 
 const mainFeaturedPost = {
-  title: "Internal Events Page",
+  title: "Internal Engagement",
   description:
-    "One stop platform to search and attend personalised internal & external events",
+    "One stop platform to search and attend personalised internal & external Engagement",
   image:
     "https://thumbs.gfycat.com/AntiqueEdibleBarnswallow-size_restricted.gif",
   imgText: "Events",

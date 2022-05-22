@@ -91,39 +91,44 @@ export default function EventsPageTiles() {
       <CssBaseline />
       <main>
         <Typography variant="h5" className={classes.divHeading}>
-          <b>Internal Events</b>
+          <b>Internal Engagement</b>
         </Typography>
         <br />
         <Grid container spacing={4}>
           {featuredPosts.map((card) => (
             <Grid item key={card.title} xs={12} sm={6} md={4}>
-               
               <Card className={classes.card}>
-              <Link to={"/internalPage/"+card.eid} style={{ textDecoration: 'none' }}> 
-                <CardMedia
-                  className={classes.cardMedia}
-                  image={card.image}
-                  title={card.title}
-                  // onClick={() => {window.open('/internalPage/'+card.eid)}}
-                />
+                <Link
+                  to={"/internalPage/" + card.eid}
+                  style={{ textDecoration: "none" }}
+                >
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={card.image}
+                    title={card.title}
+                    // onClick={() => {window.open('/internalPage/'+card.eid)}}
+                  />
                 </Link>
                 <CardContent className={classes.cardContent}>
-                <Link to={"/internalPage/"+card.eid} style={{ textDecoration: 'none' }}> 
-                  <Typography
-                    gutterBottom
-                    variant="h6"
-                    className={classes.subHeading}
+                  <Link
+                    to={"/internalPage/" + card.eid}
+                    style={{ textDecoration: "none" }}
                   >
-                    {card.title}
-                  </Typography>
-                  <Typography
-                    align="center"
-                    variant="body1"
-                    className={classes.desc}
-                    gutterBottom
-                  >
-                    {card.description}
-                  </Typography>
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      className={classes.subHeading}
+                    >
+                      {card.title}
+                    </Typography>
+                    <Typography
+                      align="center"
+                      variant="body1"
+                      className={classes.desc}
+                      gutterBottom
+                    >
+                      {card.description}
+                    </Typography>
                   </Link>
                   <CardActions>
                     <Button
@@ -155,7 +160,6 @@ export default function EventsPageTiles() {
                   </CardActions>
                 </CardContent>
               </Card>
-             
             </Grid>
           ))}
         </Grid>
@@ -199,29 +203,31 @@ export default function EventsPageTiles() {
 
 const featuredPosts = [
   {
-    title: "Indian Canvas Painting",
-    eid:"0",
-    description: "Quick 1min podcast to know more about Indian Canvas Painting",
+    title: "Life & Families",
+    eid: "1",
+    description:
+      "It promotes a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
     image:
-      "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
+      "https://www.nomuraholdings.com/sustainability/employee/image/powai_tab07.jpg",
     imageText: "Artists name",
     readmore:
-      "While sitting down, stretch your arms out at your sides and press your shoulder blades together. With your palms facing down, circle your arms forwards around 20 times. Then, face your palms upwards and circle your arms backwards around 20 times. After this, circle your wrists 20 times in each direction.",
+      "To promote a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
   },
   {
-    title: "Worli Paintaing",
-    eid:"1",
-    description: "How to get started with Worli Paintings",
+    title: "WIN (Women in Network)",
+    eid: "1",
+    description:
+      "WIN club engages, support and retain women through their career development at Nomura. It attracts women who will contribute to the Firm's continued success. It helps in partnering with our internal and external stakeholders to enhance the image of the Firm",
     image:
-      "https://5.imimg.com/data5/PI/TE/MY-13589378/2016-07-05-16-53-05-500x500.jpg",
+      "https://www.nomuraholdings.com/sustainability/employee/image/powai_tab01.jpg",
     imageText: "Artists name",
     readmore:
       "Stand up and hold your hands together behind your back, expanding your chest. Pull your shoulder blades as close together as possible and hold the pose for 30 seconds.",
   },
   {
-    title: "Brush Strokes",
-    eid:"2",
-    description: "All you need to know about Brush Strokes",
+    title: "IDAHOBIT (Rainbows amongst us)",
+    eid: "2",
+    description: "It is a collection of stories about individuals from the LGBTQIA+ communities & allies. ",
     image:
       "https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg",
     imageText: "Artists name",

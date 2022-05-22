@@ -91,7 +91,7 @@ export default function ExternalPageTile() {
       <CssBaseline />
       <main>
         <Typography variant="h5" className={classes.divHeading}>
-          <b>External Events</b>
+          <b>External Engagement</b>
         </Typography>
         <br />
         <Grid container spacing={4}>

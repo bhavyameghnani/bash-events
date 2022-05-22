@@ -11,8 +11,8 @@ import Link from '@material-ui/core/Link';
 
 const steps = [
   {
-    label: 'Share External Event',
-    description: `Final relevant external event for employees to participate`,
+    label: 'Share External Engagement',
+    description: `Final relevant external Engagement for employees to participate`,
     url: '/external'
   },
   {
@@ -27,8 +27,8 @@ const steps = [
     url: '/external'
   },
   {
-    label: 'Get Event Tickets ',
-    description: `You can get one monthly External event ticket`,
+    label: 'Get Engagement Tickets ',
+    description: `You can get one monthly External Engagement ticket`,
     url: '/external'
   },
 ];

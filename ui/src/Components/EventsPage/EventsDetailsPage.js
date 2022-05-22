@@ -137,7 +137,7 @@ export default function EventsDetailsPage() {
       <CssBaseline />
       <main>
         <Container maxWidth="lg">
-          <Header title="Events Page" />
+          <Header title="Employee Engagement" />
           <main>
             {mainFeaturedPost && <MainFeaturedPost post={mainFeaturedPost} />}
             <Grid
@@ -162,7 +162,7 @@ export default function EventsDetailsPage() {
               </Grid>
             </Grid>
             <br />
-            <GalleryEvent/>
+            <GalleryEvent />
             <br />
             <Container maxWidth="lg">
               <Typography
@@ -328,14 +328,15 @@ export default function EventsDetailsPage() {
 
 const data = [
   {
-    title: "Indian Canvas Painting",
+    title: "Life & Families",
     eid: "1",
-    description: "Quick 1min podcast to know more about Indian Canvas Painting",
+    description:
+      "To promote a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
     image:
       "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
     imageText: "Artists name",
     readmore:
-      "While sitting down, stretch your arms out at your sides and press your shoulder blades together. With your palms facing down, circle your arms forwards around 20 times. Then, face your palms upwards and circle your arms backwards around 20 times. After this, circle your wrists 20 times in each direction.",
+      "To promote a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
   },
   {
     title: "Worli Paintaing",

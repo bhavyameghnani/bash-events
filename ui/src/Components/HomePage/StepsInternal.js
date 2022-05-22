@@ -11,14 +11,14 @@ import Link from '@material-ui/core/Link';
 
 const steps = [
   {
-    label: 'Set Event Reminders',
-    description: `Shows all Interested events with Reminders`,
+    label: 'Set Engagement Reminders',
+    description: `Shows all Interested Engagement with Reminders`,
     url: '/internal'
   },
   {
-    label: 'Get Event Tickets',
+    label: 'Get Engagement Tickets',
     description:
-      'Apply to get the ticket to event',
+      'Apply to get the ticket to Engagement',
       url: '/internal'
   },
   {
@@ -33,7 +33,7 @@ const steps = [
   },
   {
     label: 'Nomu - Metaverse',
-    description: `Enjoy event gallery in Nomura's Metaverse`,
+    description: `Enjoy Engagement gallery in Nomura's Metaverse`,
     url: '/internal'
   }
  

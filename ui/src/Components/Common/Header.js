@@ -9,8 +9,8 @@ import Link from "@material-ui/core/Link";
 
 const sections = [
   { title: "Home", url: "/home" },
-  { title: "Internal Events", url: "/internal" },
-  { title: "External Events", url: "/external" },
+  { title: "Internal Engagement", url: "/internal" },
+  { title: "External Engagement", url: "/external" },
   { title: "Analytics", url: "/home" },
   { title: "Collaborate", url: "/collaborate"}
 ];

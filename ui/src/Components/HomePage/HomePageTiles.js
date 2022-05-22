@@ -55,9 +55,7 @@ export default function HomePageTile() {
           </center>
         </Container>
      
-        <Typography variant="h5" className={classes.divHeading}>
-          <b>Event Categories</b>
-        </Typography>
+      
     <br />
         <Grid
           container
@@ -125,14 +123,14 @@ export default function HomePageTile() {
 
 const dashboardStats = [
   {
-    title: 'Internal Events',
-    icon: "https://media.istockphoto.com/vectors/employee-engagement-concept-vector-id1330594434?k=20&m=1330594434&s=612x612&w=0&h=EP9lQ2z55xwRktPnEIRXEByAZLpObnMpvqUQ60EFTsU=",
+    title: 'Internal Engagement',
+    icon: "https://d1qfwzw6aggd4h.cloudfront.net/background-images/_listImageSq/Japan-Gender-1200x800_v2.png",
     value: 0
   },
   {
-    title: 'External Events',
+    title: 'External Engagement',
     value: 1,
-    icon: "https://media.istockphoto.com/vectors/business-presentation-with-charts-on-the-board-in-front-of-the-at-vector-id1193355523?k=20&m=1193355523&s=612x612&w=0&h=xdE-53FZhrGwk279h2w54VL9q0ICCYulspxfQTZzuIY=",
+    icon: "https://d1qfwzw6aggd4h.cloudfront.net/background-images/_bannerImage/1200x800v2.jpg",
   },
 ];
 
@@ -199,3 +197,8 @@ const useStyles = makeStyles((theme) => ({
     padding: '5%'
   },
 }));
+
+
+
+
+

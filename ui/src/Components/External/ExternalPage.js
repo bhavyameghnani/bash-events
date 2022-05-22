@@ -11,7 +11,7 @@ export default function ExternalPage() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="External Events" />
+        <Header title="External Engagement" />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={2} align="center">
@@ -25,11 +25,11 @@ export default function ExternalPage() {
 }
 
 const mainFeaturedPost = {
-  title: "External Events Page",
+  title: "External Engagement",
   description:
-    "One stop platform to search and attend personalised internal & external events",
+    "One stop platform to search and attend personalised internal & external Engagement",
   image:
     "https://thumbs.gfycat.com/AntiqueEdibleBarnswallow-size_restricted.gif",
-  imgText: "Events",
+  imgText: "Engagement",
   linkText: "Continue reading…",
 };
