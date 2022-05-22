@@ -11,7 +11,7 @@ export default function HomePage() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="BASH" />
+        <Header title="OneNomura" />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={2} align="center">

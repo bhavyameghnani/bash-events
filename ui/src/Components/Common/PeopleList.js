@@ -12,7 +12,7 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    maxWidth: "36ch",
+    maxWidth: "100ch",
     backgroundColor: theme.palette.background.paper,
   },
   inline: {

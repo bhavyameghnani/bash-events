@@ -15,8 +15,29 @@ import MainFeaturedPost from "../Common/MainFeaturedPost";
 import Button from "@material-ui/core/Button";
 import BottomNavigationPage from "../Common/BottomNavigationPage";
 import PeopleList from "../Common/PeopleList";
+import Typography from "@material-ui/core/Typography";
+
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import Slide from "@material-ui/core/Slide";
+
+import Input from "@material-ui/core/Input";
+import InputLabel from "@material-ui/core/InputLabel";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import GalleryEvent from "../Gallery/GalleryEvent";
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
   mainGrid: {
     marginTop: theme.spacing(3),
   },
@@ -81,6 +102,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function EventsDetailsPage() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const classes = useStyles();
   const { eid } = useParams();
   let id = parseInt(eid);
@@ -95,7 +126,9 @@ export default function EventsDetailsPage() {
       title: data[id].title,
       description: data[id].description,
       image: data[id].image,
+      readmore: data[id].readmore,
     };
+    console.log(banner);
     setMainFeaturedPost(banner);
   }, [id]);
 
@@ -129,8 +162,19 @@ export default function EventsDetailsPage() {
               </Grid>
             </Grid>
             <br />
+            <GalleryEvent/>
             <br />
             <Container maxWidth="lg">
+              <Typography
+                component="h2"
+                variant="h5"
+                color="inherit"
+                align="left"
+                className={classes.toolbarTitle}
+              >
+                {mainFeaturedPost && mainFeaturedPost.readmore}
+              </Typography>
+              <br />
               <Grid
                 container
                 spacing={3}
@@ -139,9 +183,10 @@ export default function EventsDetailsPage() {
                 alignItems="center"
                 justifyContent="center"
               >
-                 <Grid item>
+                <Grid item>
                   <PeopleList />
                 </Grid>
+
                 <Grid item>
                   <Paper className={classes.paperBox} elevation={1}>
                     <TextField
@@ -172,8 +217,16 @@ export default function EventsDetailsPage() {
                     />
                   </Paper>
                 </Grid>
-               
+              </Grid>
 
+              <Grid
+                container
+                spacing={3}
+                align="center"
+                direction="row"
+                alignItems="center"
+                justifyContent="center"
+              >
                 <Grid item>
                   <Button
                     type="submit"
@@ -187,6 +240,9 @@ export default function EventsDetailsPage() {
                     type="submit"
                     variant="contained"
                     className={classes.submit}
+                    onClick={() => {
+                      handleClickOpen();
+                    }}
                   >
                     <b>Apply</b>
                   </Button>
@@ -195,6 +251,72 @@ export default function EventsDetailsPage() {
             </Container>
           </main>
         </Container>
+
+        <Dialog
+          open={open}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleClose}
+          aria-labelledby="alert-dialog-slide-title"
+          aria-describedby="alert-dialog-slide-description"
+        >
+          <DialogTitle id="alert-dialog-slide-title">
+            <b>Registeration - Ticket to Event!</b>
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-slide-description">
+              🌲 <b>BASH Tree:</b> A referral initiative that encourages
+              participation that works on <b>“Ally - Tree Registration”</b> 🌲
+              logic. Every time you register for an event, you refer an{" "}
+              <b>‘Ally’</b> 👫🏼 or a fellow employee for the event. Upon
+              successful registration by the ally you have referred, you earn{" "}
+              <b>‘BASH COINS’</b> 🟡
+            </DialogContentText>
+
+            <TextField
+              className={classes.margin}
+              id="input-with-icon-textfield"
+              label="Ally 1"
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <AccountCircle />
+                  </InputAdornment>
+                ),
+              }}
+            />
+
+            <TextField
+              className={classes.margin}
+              id="input-with-icon-textfield"
+              label="Ally 2"
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <AccountCircle />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button
+              onClick={handleClose}
+              variant="contained"
+              className={classes.submit}
+            >
+              Back
+            </Button>
+            <Button
+              onClick={handleClose}
+              variant="contained"
+              className={classes.submit}
+            >
+              Submit
+            </Button>
+          </DialogActions>
+        </Dialog>
+
         <br />
         <br />
         <br />

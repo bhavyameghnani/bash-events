@@ -177,7 +177,7 @@ export default function LoginPage() {
               style={{ color: "#ca142a" }}
               align="center"
             >
-              Welcome to BASH
+              Welcome to OneNomura
             </Typography>
             <br />
             <Typography
