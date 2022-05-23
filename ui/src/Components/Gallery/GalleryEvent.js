@@ -59,43 +59,30 @@ export default function GalleryEvent() {
 
 const itemData = [
     {
-      title: "Indian Canvas Painting",
+      title: "Culinary Artists",
       img:
-        "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
+        "https://cf.ltkcdn.net/family/images/std/200821-800x533r1-family.jpg",
       author: "Artists name",
       
     },
     {
-      title: "Indian Canvas Painting",
+      title: "Kartavya - Tree Plantation",
       img:
-        "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
+        "https://im.indiatimes.in/media/content/2019/Aug/planting_more_trees_1566553311.jpg",
       author: "Artists name",
     },
     {
-      title: "Indian Canvas Painting",
+      title: "New Beginning",
       img:
-        "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
+        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/empty-paved-road-at-sunset-in-the-chilean-patagonia-royalty-free-image-1591901619.jpg?resize=640:*",
       author: "Artists name",
       
     },
     {
-      title: "Indian Canvas Painting",
+      title: "Canvas Painting",
       img:
         "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
       author: "Artists name",
-    },
-    {
-      title: "Indian Canvas Painting",
-      img:
-        "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
-      author: "Artists name",
-    },
-    {
-      title: "Indian Canvas Painting",
-      img:
-        "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
-      author: "Artists name",
-      
     },
     
   ];

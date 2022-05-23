@@ -86,6 +86,10 @@ export default function EventsPageTiles() {
     setOpen(false);
   };
 
+  function handleOpenNewPage(eid){
+    window.open("/internalPage/" + eid, "_self");
+  }
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -154,6 +158,7 @@ export default function EventsPageTiles() {
                       color="primary"
                       align="center"
                       fullWidth
+                      onClick={()=> {handleOpenNewPage(card.eid)}}
                     >
                       Apply
                     </Button>
@@ -204,7 +209,7 @@ export default function EventsPageTiles() {
 const featuredPosts = [
   {
     title: "Life & Families",
-    eid: "1",
+    eid: "0",
     description:
       "It promotes a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
     image:
@@ -227,11 +232,11 @@ const featuredPosts = [
   {
     title: "IDAHOBIT (Rainbows amongst us)",
     eid: "2",
-    description: "It is a collection of stories about individuals from the LGBTQIA+ communities & allies. ",
+    description: "It is a collection of stories about individuals from the LGBTQIA+ communities & allies. DEI is deeply embedded in the culture fabric of Nomura & we value it as a business imperative. We strive to raise awareness & celebrate significant days & build projects.",
     image:
       "https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg",
     imageText: "Artists name",
     readmore:
-      "Under your desk, raise both legs at once upwards, and slowly lower them down. Repeat few times.",
+      "It is a collection of stories about individuals from the LGBTQIA+ communities & allies. DEI is deeply embedded in the culture fabric of Nomura & we value it as a business imperative. We strive to raise awareness & celebrate significant days & build projects.",
   },
 ];

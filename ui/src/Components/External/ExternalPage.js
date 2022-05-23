@@ -27,9 +27,9 @@ export default function ExternalPage() {
 const mainFeaturedPost = {
   title: "External Engagement",
   description:
-    "One stop platform to search and attend personalised internal & external Engagement",
+    "One stop platform to search and attend personalised External Engagement and connect with the world. A place to learn & explore various ecosystem ",
   image:
-    "https://thumbs.gfycat.com/AntiqueEdibleBarnswallow-size_restricted.gif",
+    "https://www.nomuraholdings.com/jp/company/image/img_06.jpg",
   imgText: "Engagement",
   linkText: "Continue reading…",
 };

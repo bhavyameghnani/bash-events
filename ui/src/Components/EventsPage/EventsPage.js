@@ -28,9 +28,9 @@ export default function EventsPage() {
 const mainFeaturedPost = {
   title: "Internal Engagement",
   description:
-    "One stop platform to search and attend personalised internal & external Engagement",
+    "One stop platformto search and attend personalised Internal Engagement, meet like minded people with similar interests, earn BASH Coins & generate new connections & Innovation.",
   image:
-    "https://thumbs.gfycat.com/AntiqueEdibleBarnswallow-size_restricted.gif",
+    "https://www.nomuraholdings.com/sustainability/employee/image/employee_main_pc.jpg",
   imgText: "Events",
   linkText: "Continue reading…",
 };

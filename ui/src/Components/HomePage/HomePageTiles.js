@@ -57,7 +57,7 @@ export default function HomePageTile() {
      
       
     <br />
-        <Grid
+        {/* <Grid
           container
           spacing={4}
           direction="row"
@@ -92,23 +92,12 @@ export default function HomePageTile() {
               <GenericCard alt="Art Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/painting-3333455-2773690.png" desc="ART"/>
             </Link>
           </Grid>
-          {/* <Grid item>
-            <GenericCard alt="Finance Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/digital-finance-1133706.png" desc="FINANCE"/>
-          </Grid> */}
           <Grid item>
             <Link to={"/events/strategy"} style={{ textDecoration: 'none' }}> 
               <GenericCard alt="Strategy Icon" image="https://cdn.iconscout.com/icon/premium/png-256-thumb/strategy-plan-target-achieve-board-sketch-business-model-60322.png" desc="Strategy"/>
             </Link>
           </Grid>
-          {/* <Grid item>
-            <img
-              src="  https://cdn.iconscout.com/icon/premium/png-256-thumb/human-resource-management-1528152-1297600.png"
-              height="130px"
-              width="130px"
-              alt="icon"
-            />
-          </Grid> */}
-        </Grid>
+        </Grid> */}
 
         <br />
         <br />

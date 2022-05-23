@@ -71,9 +71,9 @@ export default function MainFeaturedPost(props) {
             <Typography variant="h5" color="inherit" paragraph>
               {post.subDescription}
             </Typography>
-            <Link variant="subtitle1" href="/">
+            {/* <Link variant="subtitle1" href="/">
               Read more
-            </Link>
+            </Link> */}
           </div>
         </Grid>
       </Grid>

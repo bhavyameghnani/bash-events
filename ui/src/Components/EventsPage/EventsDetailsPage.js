@@ -329,29 +329,30 @@ export default function EventsDetailsPage() {
 const data = [
   {
     title: "Life & Families",
+    eid: "0",
+    description:
+      "It promotes a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
+    image:
+      "https://www.nomuraholdings.com/sustainability/employee/image/powai_tab07.jpg",
+    imageText: "Artists name",
+    readmore:
+      "To promote a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
+  },
+  {
+    title: "WIN (Women in Network)",
     eid: "1",
     description:
-      "To promote a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
+      "WIN club engages, support and retain women through their career development at Nomura. It attracts women who will contribute to the Firm's continued success. It helps in partnering with our internal and external stakeholders to enhance the image of the Firm",
     image:
-      "https://5.imimg.com/data5/EW/AC/MY-30913564/canvas-painting-500x500.jpg",
+      "https://www.nomuraholdings.com/sustainability/employee/image/powai_tab01.jpg",
     imageText: "Artists name",
     readmore:
-      "To promote a culture of good health, well-being and work-life balance and drive personal and professional growth. It helps to connect members through networking & raise awareness around key family, health, wellness and life-balance issues.",
+      "WIN club engages, support and retain women through their career development at Nomura. It attracts women who will contribute to the Firm's continued success. It helps in partnering with our internal and external stakeholders to enhance the image of the Firm.",
   },
   {
-    title: "Worli Paintaing",
+    title: "IDAHOBIT (Rainbows amongst us)",
     eid: "2",
-    description: "How to get started with Worli Paintings",
-    image:
-      "https://5.imimg.com/data5/PI/TE/MY-13589378/2016-07-05-16-53-05-500x500.jpg",
-    imageText: "Artists name",
-    readmore:
-      "Stand up and hold your hands together behind your back, expanding your chest. Pull your shoulder blades as close together as possible and hold the pose for 30 seconds.",
-  },
-  {
-    title: "Brush Strokes",
-    eid: "3",
-    description: "All you need to know about Brush Strokes",
+    description: "It is a collection of stories about individuals from the LGBTQIA+ communities & allies. ",
     image:
       "https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg",
     imageText: "Artists name",

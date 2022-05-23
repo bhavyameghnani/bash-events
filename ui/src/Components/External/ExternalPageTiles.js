@@ -199,40 +199,30 @@ export default function ExternalPageTile() {
 
 const featuredPosts = [
   {
-    title: "Leadership Program",
-    description: "Status: Applied",
+    title: "NASSCOM",
+    description: "The National Association of Software and Service Companies is an Indian non-governmental trade association and advocacy group, focused mainly on the technology industry of India. Established in 1988, NASSCOM is a non-profit organisation.",
     image:
-      "https://focusu.com/wp-content/uploads/2020/09/1CB3A4E6-0B1C-440B-91EB-8FA4DC82925F.png",
+      "https://techstory.in/wp-content/uploads/2019/06/1462452344-7037.jpg",
     imageText: "Artists name",
     readmore:
-      "While sitting down, stretch your arms out at your sides and press your shoulder blades together. With your palms facing down, circle your arms forwards around 20 times. Then, face your palms upwards and circle your arms backwards around 20 times. After this, circle your wrists 20 times in each direction.",
+      "The National Association of Software and Service Companies is an Indian non-governmental trade association and advocacy group, focused mainly on the technology industry of India. Established in 1988, NASSCOM is a non-profit organisation.",
   },
   {
-    title: "Health & Mental Wellness Program",
-    description: "Status: Pending",
+    title: "AWS Tech Summit",
+    description: "AWS Partner Summit brings together the partner community from around globe to discover how to harness cloud innovation & to build tailored customer outcomes & empower digital transformation",
     image:
-      "https://globalwellnessinstitute.org/wp-content/uploads/2019/05/wellnessinfographic.png",
+      "https://www.blazeclan.com/wp-content/uploads/2018/05/AWS-summit-mumbai.png",
     imageText: "Artists name",
     readmore:
-      "Stand up and hold your hands together behind your back, expanding your chest. Pull your shoulder blades as close together as possible and hold the pose for 30 seconds.",
+      "AWS Partner Summit brings together the partner community from around Australia and New Zealand to discover how we can harness cloud innovation to build tailored customer outcomes, empower digital transformation, and drive sustainability",
   },
   {
-    title: "Technology - Networking Program",
-    description: "Status: Applied",
+    title: "Singapore Fintech Festival",
+    description: "Singapore FinTech Festival is the largest FinTech festival in the world and a knowledge platform for the global FinTech community. Anyone around the globe can attend the event & network with like minded community & organisations. ",
     image:
-      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/stockvault-person-studying-and-learning---knowledge-concept178241_0-647x363.jpeg?0LocAW2E2gIBzZp0oZSWzxmQTvAPhN_v",
+      "https://c9k9c9v3.stackpathcdn.com/wp-content/uploads/2021/11/Singapore-Fintech-Festival-2021-What-to-Expect-and-Top-Sessions-to-Attend.jpg?x82653",
     imageText: "Artists name",
     readmore:
-      "Under your desk, raise both legs at once upwards, and slowly lower them down. Repeat few times.",
-  },
-
-  {
-    title: "CSR",
-    description: "Status: Verified & Validated",
-    image:
-      "https://www.corporateprofessionals.com/wp-content/uploads/2020/02/csr-2.jpg",
-    imageText: "Artists name",
-    readmore:
-      "Holding a water bottle, or an object of a similar weight, let your arms fall straight by your side and then slowly bend them upwards. Repeat this action multiple times on both arms.",
+      "Singapore FinTech Festival is the largest FinTech festival in the world and a knowledge platform for the global FinTech community. Anyone around the globe can attend the event & network with like minded community & organisations. ",
   },
 ];

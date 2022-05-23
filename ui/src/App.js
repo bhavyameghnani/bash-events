@@ -10,6 +10,7 @@ import EventCategoryPage from "./Components/HomePage/EventCatergoryPage"; //make
 import CollaborateDashboard from "./Components/Collaborate/CollaborateDashboard";
 import Gallery from "./Components/Gallery/Gallery";
 import GalleryEvent from "./Components/Gallery/GalleryEvent";
+import Analytics from "./Components/Analytics/Analytics";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/collaborate" element={<CollaborateDashboard />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/galleryEvent" element={<GalleryEvent />} />
+          <Route path="/analytics" element={< Analytics/>} />
         </Routes>
       </BrowserRouter>
     </div>

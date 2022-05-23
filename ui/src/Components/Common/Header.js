@@ -12,7 +12,7 @@ const sections = [
   { title: "Internal Engagement", url: "/internal" },
   { title: "External Engagement", url: "/external" },
   { title: "Analytics", url: "/home" },
-  { title: "Collaborate", url: "/collaborate"}
+  { title: "Collaborate", url: "/collaborate" },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     width: "10%",
-    height: "10%",
+    height: "60px",
   },
 }));
 
@@ -52,7 +52,7 @@ export default function Header(props) {
         <img
           className={classes.logo}
           alt="logo"
-          src="https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png"
+          src="https://i.ibb.co/nwtN5xG/logo-1.png"
         />
         <Typography
           component="h2"
