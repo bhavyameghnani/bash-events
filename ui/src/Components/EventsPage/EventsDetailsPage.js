@@ -30,6 +30,8 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import GalleryEvent from "../Gallery/GalleryEvent";
 
+import tree from "../../Resources/Images/tree.png";
+
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -103,6 +105,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function EventsDetailsPage() {
   const [open, setOpen] = React.useState(false);
+  const [open1, setOpen1] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -110,6 +113,15 @@ export default function EventsDetailsPage() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+
+  const handleClickOpen1 = () => {
+    setOpen1(true);
+  };
+
+  const handleClose1 = () => {
+    setOpen1(false);
   };
 
   const classes = useStyles();
@@ -248,6 +260,8 @@ export default function EventsDetailsPage() {
                   </Button>
                 </Grid>
               </Grid>
+              <br />
+              <img src={tree} height="400px" width="700px" />
             </Container>
           </main>
         </Container>
@@ -308,7 +322,36 @@ export default function EventsDetailsPage() {
               Back
             </Button>
             <Button
-              onClick={handleClose}
+              onClick={()=> {handleClose(); handleClickOpen1()}}
+              variant="contained"
+              className={classes.submit}
+            >
+              Submit
+            </Button>
+          </DialogActions>
+        </Dialog>
+        {/* Second Dialog box */}
+        <Dialog
+          open={open1}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleClose1}
+          aria-labelledby="alert-dialog-slide-title"
+          aria-describedby="alert-dialog-slide-description"
+        >
+          <DialogTitle id="alert-dialog-slide-title">
+            <b>Congratulations!</b>
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-slide-description">
+              Wow! You successful earned 6 <b>‘BASH COINS’</b> 🟡 by referring two allies.
+              You have also been added to 🌲 <b>BASH Tree</b> 
+            </DialogContentText>
+
+          </DialogContent>
+          <DialogActions>
+            <Button
+              onClick={handleClose1}
               variant="contained"
               className={classes.submit}
             >
@@ -352,7 +395,8 @@ const data = [
   {
     title: "IDAHOBIT (Rainbows amongst us)",
     eid: "2",
-    description: "It is a collection of stories about individuals from the LGBTQIA+ communities & allies. ",
+    description:
+      "It is a collection of stories about individuals from the LGBTQIA+ communities & allies. ",
     image:
       "https://image.freepik.com/free-photo/multicolored-paint-brush-strokes-surface_23-2148815523.jpg",
     imageText: "Artists name",
